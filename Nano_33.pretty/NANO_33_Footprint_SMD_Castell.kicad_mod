@@ -104,9 +104,14 @@
   (pad "28" smd oval (at -12.7 -8.255 270) (size 3 1.7) (layers "F.Cu" "F.Mask") (tstamp 4ed6c8d0-d65f-4e54-afa2-ad425c36b4ee))
   (pad "29" smd oval (at -15.24 -8.255 270) (size 3 1.7) (layers "F.Cu" "F.Mask") (tstamp 72e4c7dc-5a34-46f4-b39f-77f96952e880))
   (pad "30" smd oval (at -17.78 -8.255 270) (size 3 1.7) (layers "F.Cu" "F.Mask") (tstamp 017b03e5-99cd-47cd-adc5-3abda2ef4504))
-  (model "${NANO_33_3D_MODELS}/Arduino_Nano_V3.wrl"
+  (model "${NANO_33_3D_MODELS}/Arduino_Nano_V3.wrl" hide
     (offset (xyz 0.5 0 0))
     (scale (xyz 0.4 0.4 0.4))
     (rotate (xyz 0 0 180))
+  )
+  (model "${NANO_33_3D_MODELS}/Arduino Nano 33 IoT.stp"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 90 -180 90))
   )
 )

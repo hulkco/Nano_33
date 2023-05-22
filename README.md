@@ -5,7 +5,10 @@
 ![](images/002.png) 
 
 Instructions for new users in KiCad.
-Contributed thanks to: Fred (FrightRisk) https://github.com/FrightRisk
+Contributed thanks to: Fred [FrightRisk](https://github.com/FrightRisk)
+
+3D model credit Arseniy Yavtushenko, [GrabCAD](https://grabcad.com/library/arduino-nano-33-iot-1)
+
 
 ## Add to your project
 
