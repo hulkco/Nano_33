@@ -1,11 +1,45 @@
-#New footprints for new @arduino  Nano 33 in @kicad_pcb
+# New footprints for new @arduino  Nano 33 in @kicad_pcb
 
 ![](images/003.png) 
 ![](images/001.png) 
 ![](images/002.png) 
 
 Instructions for new users in KiCad.
-Contributed thanks to: Fred (FrightRisk) https://github.com/FrightRisk
+Contributed thanks to: Fred [FrightRisk](https://github.com/FrightRisk)
+
+3D model credit Arseniy Yavtushenko, [GrabCAD](https://grabcad.com/library/arduino-nano-33-iot-1)
+
+
+## Add to your project
+
+```shell
+mkdir -p libraries # Or wherever you want to store project specific libs
+git submodule add https://github.com/ac1ja/nano-33-kicad-library.git
+```
+
+Under `Preferences` find `Manage footprints`
+
+
+
+## Include in KiCAD
+
+If you want 3D models, you'll need to
+open `Preferences` and `Configure Paths` then add the following environment variable:
+
+```
+Name: NANO_33_3D_MODELS
+Path: <Path to folder>
+```
+
+And if you use kibot, add this to your `pre_flight`
+
+```
+preflight:
+  ...
+  set_text_variables:
+    - name: "NANO_33_3D_MODELS" # 3D models for nano 33 Library
+      command: "echo 'Hardware/Board/Libraries/nano-33-kicad-library/3dModel'"
+```
 
 1. Created a "library" folder for all my libraries in /documents/kicad
 2. Created an "alias" in "preferences, configure paths" of "LOCALREPO" pointing to the libraries folder
